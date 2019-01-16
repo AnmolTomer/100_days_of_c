@@ -11,7 +11,7 @@ main(){
     while (temp>0){
         rem = temp%10; //Remainder or mod operator to get the last digit and add its cube in the next step to sum.
         sum += (rem*rem*rem);
-        temp /= 10; // To remove the last digit from the number we divide /.
+        temp /= 10; // To remove the last digit from right of the number we divide using "/".
     }
     if (num==sum)
     printf("%d is an Armstrong Number.",sum);
