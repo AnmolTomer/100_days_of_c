@@ -3,7 +3,7 @@
 
 main()
 {
-	int cno, pmr, cmr, cu;
+	int cno, pmr, cmr, cu; // customer number, previous month record, current month record, consumed units.
 	float total;
 	char sec;
 	char cname[20];
@@ -54,6 +54,16 @@ main()
 		if(cu <= 100)
 		total = cu*0.50;
 	}
+	
+	printf("\n Customer Name 	: %s",cname);
+	printf("\n Customer Number  : %d",cno);
+	printf("\n Previous Units   : %d",pmr);
+	printf("\n Current Units    : %d",cmr);
+	printf("\n Sector           : %c",sec);
+	printf("\n Consumed Units   : %d",cu);
+	printf("\n Electric Bill    :  %f",total);
+	
+	
 	
 	
 }
